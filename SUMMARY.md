@@ -5,9 +5,6 @@
 ## Protocol Overview
 
 * [Posts](protocol-overview/posts.md)
-
-***
-
 * [Comments](comments.md)
 * [Archives](archives.md)
 * [Announcements](announcements.md)
