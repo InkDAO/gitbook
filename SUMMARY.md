@@ -5,11 +5,11 @@
 ## Protocol Overview
 
 * [Posts](protocol-overview/posts.md)
-* [Comments](comments.md)
-* [Archives](archives.md)
-* [Announcements](announcements.md)
-* [My Posts & Comments](my-posts-and-comments.md)
-* [Challenges](challenges.md)
+* [Comments](protocol-overview/comments.md)
+* [Archives](protocol-overview/archives.md)
+* [Announcements](protocol-overview/announcements.md)
+* [My Posts & Comments](protocol-overview/my-posts-and-comments.md)
+* [Challenges](protocol-overview/challenges.md)
 
 ## Tutorials
 
