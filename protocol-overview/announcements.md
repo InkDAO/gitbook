@@ -16,6 +16,6 @@ The Announcements page serves as the official communication channel for platform
 
 ## How It Works
 
-Announcements are created by administrators and remain permanently visible on the Announcements page. Unlike regular posts, announcements are not archived after 7 days and serve as a permanent reference for important platform information.
+Announcements are created by administrators and remain permanently visible on the Announcements page. Unlike regular posts, announcements are not archived after 30 days and serve as a permanent reference for important platform information.
 
 If you have questions about any announcement, feel free to discuss them on our [Telegram channel](https://t.me/decentralizedX0).
