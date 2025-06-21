@@ -6,7 +6,7 @@ description: >-
 
 # Getting Started
 
-Welcome to dX! This guide will help you get started with our decentralized platform. You can browse posts and comments without any setup, but you'll need a wallet to create posts or leave comments.
+Welcome to dX! You can browse posts and comments without any setup, but you'll need a wallet to create posts or leave comments.
 
 ## Browsing dX
 - Visit [decentralizedX](https://decentralizedx.netlify.app/)
@@ -57,4 +57,4 @@ To create posts or leave comments, you'll need to set up a wallet. Here's how:
 
 ## Need Help?
 - Join our [Telegram community](https://t.me/decentralizedX0) for support
-- Review the [Announcements](announcements.md) for platform updates
+- Review the [Announcements](protocol-overview/announcements.md) for platform updates
