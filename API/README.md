@@ -126,8 +126,8 @@ Create, update, publish, and delete files
 Blockchain event handlers for automated status updates
 
 **Endpoints:**
-- `POST /alchemy/webhook` - Alchemy blockchain event receiver
-- `POST /quicknode/webhook` - QuickNode blockchain event receiver
+- `POST /webhook/alchemy/publish` - Alchemy blockchain event receiver
+- `POST /webhook/quicknode/publish` - QuickNode blockchain event receiver
 
 ## Support
 

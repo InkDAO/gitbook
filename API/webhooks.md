@@ -41,7 +41,7 @@ Both webhook endpoints implement HMAC-SHA256 signature verification to ensure re
 
 ---
 
-## POST /alchemy/webhook
+## POST /webhook/alchemy/publish
 
 Receives blockchain event notifications from Alchemy's Notify API when assets are published.
 
@@ -56,7 +56,7 @@ This endpoint processes webhook calls from Alchemy when the `AssetAdded` event i
 
 ### Request
 
-**Endpoint:** `POST /alchemy/webhook`
+**Endpoint:** `POST /webhook/alchemy/publish`
 
 **Headers:**
 ```
@@ -123,7 +123,7 @@ X-Alchemy-Signature: 3a7bd3e2360a3d29eea436fcfb7e44c735d117c42d1c1835420b6b9942d
 
 ---
 
-## POST /quicknode/webhook
+## POST /webhook/quicknode/publish
 
 Receives blockchain event notifications from QuickNode Streams when assets are published.
 
@@ -138,7 +138,7 @@ This endpoint processes webhook calls from QuickNode Streams service. Similar to
 
 ### Request
 
-**Endpoint:** `POST /quicknode/webhook`
+**Endpoint:** `POST /webhook/quicknode/publish`
 
 **Headers:**
 ```
