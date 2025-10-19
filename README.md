@@ -6,21 +6,35 @@ description: A decentralized content publishing and monetization platform
 
 <figure><img src=".gitbook/assets/dX_background.png" alt=""><figcaption></figcaption></figure>
 
-decentralizedX (dX) is a Web3-powered content publishing platform that enables creators to publish premium content and monetize it directly through blockchain technology. Built on Ethereum and IPFS, dX provides a censorship-resistant, decentralized infrastructure for content creators to share their work and earn from their audience without intermediaries.
+**decentralizedX (dX)** is a Web3-powered content publishing platform that allows creators to publish high-quality knowledge content and monetize it directly through blockchain technology.  
+Built on **Ethereum and IPFS**, dX provides a censorship-resistant and transparent ecosystem where creators truly **own their content, community, and revenue.**
 
-## What makes decentralizedX unique?
+Unlike traditional platforms that control distribution and take large commissions, dX ensures that all ownership and monetization rights remain with the creator. Every piece of content—whether an academic article, trading insight, or premium tutorial—is privately stored on IPFS and publicly verifiable on the blockchain.
 
-* **True Ownership**: Content is stored on IPFS with private access control. Only subscribers get lifetime access to your content through blockchain-verified ownership.
-* **Direct Monetization**: Creators set their own prices and keep 95% of revenue. Only 5% goes to platform infrastructure (servers, IPFS hosting, deployment). Payments go directly to creator wallets via smart contracts.
-* **Wallet-Based Identity**: No signup, no email, no personal data. Your wallet address is your identity, providing both privacy and accountability.
-* **Decentralized Storage**: Content stored on IPFS ensures permanence and censorship resistance. Your content can't be taken down by any central authority.
-* **Transparent & Trustless**: All transactions and ownership records are immutably stored on the Ethereum blockchain, ensuring complete transparency.
-* **Rich Content Creation**: Built-in editor supports text, images, code, embeds, and more, providing a complete content creation experience.
+### Our Vision  
+dX exists to redefine how knowledge creators publish and earn online. It empowers educators, researchers, analysts, and writers to build their own **decentralized knowledge economy**, where expertise becomes a self-sovereign digital asset.
+
+***
+
+## What Makes decentralizedX Unique?
+
+* **True Ownership:** Your content lives on IPFS with private access control. Only subscribers receive lifetime access via blockchain-verified ownership, ensuring transparency and security.
+* **Direct Monetization:** Set your own price and earn directly. Creators keep **95%** of their revenue—only **5%** supports platform infrastructure (IPFS hosting, smart contract operations).
+* **Wallet-Based Identity:** No signups, emails, or user data. Your wallet address is your secure digital identity, ensuring privacy and authenticity.
+* **Decentralized Storage:** All posts are stored on IPFS, guaranteeing permanence, resistance to censorship, and independence from centralized servers.
+* **Transparent and Trustless:** Payments, subscriptions, and ownership records are fully verifiable on Ethereum, providing creators and subscribers complete transparency.
+* **Rich Content Creation:** The built-in editor supports text, media, code, and embeds, allowing creators to craft deep, interactive reading experiences.
+
+***
 
 ## How It Works
 
-1. **Create**: Write and format your content using our rich text editor
-2. **Publish**: Upload to IPFS (private) and publish metadata to blockchain
-3. **Monetize**: Set your own price (including free) for each post
-4. **Earn**: Subscribers pay once for lifetime access, directly to your wallet
+1. **Create:** Write and format your content with dX's built-in rich text editor.  
+2. **Publish:** Upload securely to IPFS and publish metadata on-chain.  
+3. **Monetize:** Choose your own pricing model—free, one-time payment, or community access.  
+4. **Earn:** Subscribers pay directly to your wallet and gain lifetime access through on-chain ownership validation.
 
+***
+
+**In essence, decentralizedX turns knowledge into on-chain assets.**  
+Creators write on their own terms, communities support transparently, and knowledge flows freely—without gatekeepers or censorship.
