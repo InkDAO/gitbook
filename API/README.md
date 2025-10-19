@@ -1,10 +1,6 @@
 # API Documentation
 
-Welcome to the Edge Functions API documentation. This API provides a secure, decentralized file management system integrated with blockchain technology and IPFS storage.
-
-## Overview
-
-The Edge Functions API is built on cutting-edge technologies to provide a robust, secure, and decentralized platform for managing digital assets. It leverages blockchain technology for authentication and access control, IPFS for decentralized storage, and smart contracts for ownership management.
+The dX API works in conjunction with smart contracts and IPFS to enable a complete Web3 content publishing and monetization platform. It provides the necessary backend infrastructure for content storage, authentication, and access control while maintaining decentralization principles.
 
 ### Architecture
 

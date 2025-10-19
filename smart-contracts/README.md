@@ -2,30 +2,47 @@
 
 ## Overview
 
-The dX platform smart contracts enable a decentralized marketplace for digital assets. Users can create, buy, sell, and comment on digital assets stored on IPFS, with ownership tracked on-chain through ERC20 tokens.
+The dX platform smart contracts enable a decentralized content publishing and monetization platform. Creators publish content to IPFS with access controlled through blockchain-verified ownership. Each post becomes a unique ERC20 token that readers purchase for lifetime access.
 
 ## Architecture
 
-The platform consists of four core contracts working together:
+The platform consists of four core contracts working together to create a seamless content monetization system:
 
 ### Core Contracts
 
-1. **DXmaster** - Central hub managing assets, purchases, and comments
+1. **DXmaster** - Central hub for asset creation, purchases, and platform logic
 2. **DXconfig** - Configuration management and access control
-3. **DXasset** - ERC20 token representing ownership of digital assets
-4. **DXassetFactory** - Factory for deploying new asset tokens
+3. **DXasset** - ERC20 token representing access rights to content
+4. **DXassetFactory** - Factory for deploying new asset token contracts
 
-### Contract Interaction Flow
+### How They Work Together
 
 ```
-User → DXmaster → DXassetFactory → DXasset
-              ↓
-          DXconfig (access control & settings)
+Creator → DXmaster.addAsset() → DXassetFactory.createAsset() → New DXasset Contract
+                                                                        ↓
+Reader → DXmaster.buyAsset() → Payment to Creator + DXasset tokens minted to Reader
+                                    ↓
+                              DXconfig (stores configuration)
 ```
 
-## Deployed Contracts
+**Publishing Flow**:
+1. Creator uploads content to IPFS (private)
+2. Creator calls `addAsset()` with metadata and price
+3. DXassetFactory deploys new ERC20 contract for the post
+4. Metadata stored on-chain, CID recorded
+5. Post visible on platform
 
-The following contracts are currently deployed on the network:
+**Subscription Flow**:
+1. Reader finds post on platform
+2. Reader calls `buyAsset()` with payment
+3. ETH sent directly to creator's wallet
+4. DXasset tokens minted to reader
+5. Backend verifies token ownership
+6. Full content served from IPFS
+
+## Deployed Contracts (Sepolia Testnet)
+
+The following contracts are currently deployed on the Sepolia testnet:
 
 | Contract | Address |
 |----------|---------|
@@ -33,17 +50,31 @@ The following contracts are currently deployed on the network:
 | **DXmaster** | `0x332Eac90e80dd8A56eAf8FD156000087Ce08D01C` |
 | **DXassetFactory** | `0x9F0445c898DB65CFBAE461116D4B86B17323f4d0` |
 
-> **Note**: DXasset contracts are deployed dynamically when users create new assets on the platform.
+> **Note**: Each published post creates a new DXasset contract with a unique address. These are deployed dynamically using CREATE2 for deterministic addresses.
 
 ## Key Features
 
-- **Asset Creation**: Create tokenized digital assets with IPFS storage
-- **Asset Trading**: Buy and sell assets with native cryptocurrency
-- **Comments**: Community engagement through asset comments
-- **Access Control**: Role-based permissions (Admin, Bot)
+### Content Monetization
+- **Creator-Set Pricing**: Each post has individual pricing in ETH
+- **Direct Payments**: 100% of payment goes to creator's wallet
+- **Lifetime Access**: One-time purchase for permanent access rights
+- **Tokenized Ownership**: Access proven through ERC20 token ownership
+
+### Technical Features
+- **ERC20 Standard**: Compatible with existing wallets and tools
 - **Upgradeable**: Uses proxy pattern for future improvements
-- **Pausable**: Emergency stop mechanism
-- **Fee Management**: Platform fee collection from sales
+- **Pausable**: Emergency stop mechanism for security
+- **Access Control**: Role-based permissions (Admin)
+- **Deterministic Deployment**: CREATE2 for predictable addresses
+- **Event Logging**: Comprehensive event emission for indexing
+
+### Security Features
+- Reentrancy protection on all state-changing functions
+- Input validation and sanity checks
+- Pausable functionality for emergencies
+- Zero address checks
+- Native transfer validation with revert on failure
+- No platform fees or custody of funds
 
 ## Technology Stack
 
@@ -59,17 +90,6 @@ The following contracts are currently deployed on the network:
 - **Max Asset Title Length**: Character limit for asset titles
 - **Max Description Length**: Character limit for descriptions
 
-## Security Features
-
-- Reentrancy protection on critical functions
-- Access control for administrative functions
-- Input validation and sanity checks
-- Pausable functionality for emergencies
-- Zero address checks
-- Native transfer validation
-
-## Getting Started
-
 See individual contract documentation:
 
 - [DXmaster](dxmaster.md) - Core protocol logic
@@ -77,4 +97,3 @@ See individual contract documentation:
 - [DXasset](dxasset.md) - Asset token implementation
 - [DXassetFactory](dxassetfactory.md) - Factory contract
 - [Utilities](utilities.md) - Helper contracts and libraries
-

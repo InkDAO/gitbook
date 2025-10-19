@@ -5,22 +5,24 @@
 ## Protocol Overview
 
 * [Posts](protocol-overview/posts.md)
-* [Comments](protocol-overview/comments.md)
-* [Archives](protocol-overview/archives.md)
-* [Announcements](protocol-overview/announcements.md)
-* [My Posts & Comments](protocol-overview/my-posts-and-comments.md)
-* [Challenges](protocol-overview/challenges.md)
+* [Subscriptions](protocol-overview/subscriptions.md)
+* [Content Storage](protocol-overview/content-storage.md)
+* [Monetizing Content](tutorials/monetizing-content.md)
 
 ## Tutorials
 
 * [Getting Started](tutorials/getting-started.md)
+* [Creating Your First Post](tutorials/creating-first-post.md)
+* [Subscribing to Your First Post](tutorials/subscribing-first-post.md)
+* [Me Page](tutorials/me-page.md)
+
 
 ## API
 
 * [Overview](API/README.md)
 * [Authentication](API/authentication.md)
-* [Read APIs](API/read-apis.md)
-* [Write APIs](API/write-apis.md)
+* [Content APIs](API/read-apis.md)
+* [Publishing APIs](API/write-apis.md)
 * [Webhooks](API/webhooks.md)
 
 ## Smart Contracts
@@ -35,3 +37,4 @@
 
 * [dX](https://decentralizedx.netlify.app/)
 * [Telegram](https://t.me/decentralizedX0)
+* [GitHub](https://github.com/)
