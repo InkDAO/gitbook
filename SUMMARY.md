@@ -1,13 +1,13 @@
-# Table of contents
+# Table of Contents
 
-* [Introduction](README.md)
+## Introduction
+* [Welcome to decentralizedX](README.md)
 
 ## Protocol Overview
-
-* [Posts](protocol-overview/posts.md)
-* [Subscriptions](protocol-overview/subscriptions.md)
+* [Overview](protocol-overview/overview.md)
+* [Content Publishing](protocol-overview/content-publishing.md)
+* [Content Subscription](protocol-overview/content-subscription.md)
 * [Content Storage](protocol-overview/content-storage.md)
-* [Monetizing Content](tutorials/monetizing-content.md)
 
 ## Tutorials
 
@@ -37,4 +37,3 @@
 
 * [dX](https://decentralizedx.netlify.app/)
 * [Telegram](https://t.me/decentralizedX0)
-* [GitHub](https://github.com/)

@@ -11,7 +11,7 @@ decentralizedX (dX) is a Web3-powered content publishing platform that enables c
 ## What makes decentralizedX unique?
 
 * **True Ownership**: Content is stored on IPFS with private access control. Only subscribers get lifetime access to your content through blockchain-verified ownership.
-* **Direct Monetization**: Creators set their own prices. No platform fees, no middlemen. Payments go directly to creators via smart contracts.
+* **Direct Monetization**: Creators set their own prices and keep 95% of revenue. Only 5% goes to platform infrastructure (servers, IPFS hosting, deployment). Payments go directly to creator wallets via smart contracts.
 * **Wallet-Based Identity**: No signup, no email, no personal data. Your wallet address is your identity, providing both privacy and accountability.
 * **Decentralized Storage**: Content stored on IPFS ensures permanence and censorship resistance. Your content can't be taken down by any central authority.
 * **Transparent & Trustless**: All transactions and ownership records are immutably stored on the Ethereum blockchain, ensuring complete transparency.

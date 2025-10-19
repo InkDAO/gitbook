@@ -35,7 +35,7 @@ Reader → DXmaster.buyAsset() → Payment to Creator + DXasset tokens minted to
 **Subscription Flow**:
 1. Reader finds post on platform
 2. Reader calls `buyAsset()` with payment
-3. ETH sent directly to creator's wallet
+3. Payment split: 95% to creator's wallet, 5% to platform
 4. DXasset tokens minted to reader
 5. Backend verifies token ownership
 6. Full content served from IPFS
@@ -56,7 +56,7 @@ The following contracts are currently deployed on the Sepolia testnet:
 
 ### Content Monetization
 - **Creator-Set Pricing**: Each post has individual pricing in ETH
-- **Direct Payments**: 100% of payment goes to creator's wallet
+- **Direct Payments**: 95% to creator's wallet, 5% to platform infrastructure
 - **Lifetime Access**: One-time purchase for permanent access rights
 - **Tokenized Ownership**: Access proven through ERC20 token ownership
 
@@ -74,7 +74,7 @@ The following contracts are currently deployed on the Sepolia testnet:
 - Pausable functionality for emergencies
 - Zero address checks
 - Native transfer validation with revert on failure
-- No platform fees or custody of funds
+- Platform fee (5%) for infrastructure sustainability
 
 ## Technology Stack
 
@@ -85,7 +85,7 @@ The following contracts are currently deployed on the Sepolia testnet:
 
 ## Configuration Parameters
 
-- **Platform Fee**: Percentage taken from each sale (denominator: 10,000)
+- **Platform Fee**: 5% (500/10,000) for infrastructure costs (IPFS, servers, deployment)
 - **Max Comment Length**: Character limit for comments
 - **Max Asset Title Length**: Character limit for asset titles
 - **Max Description Length**: Character limit for descriptions
