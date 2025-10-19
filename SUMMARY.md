@@ -1,7 +1,7 @@
 # Table of Contents
 
-## Introduction
-* [Welcome to decentralizedX](README.md)
+## decentralizedX
+* [Introduction](README.md)
 
 ## Protocol Overview
 * [Overview](protocol-overview/overview.md)
