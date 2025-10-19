@@ -17,15 +17,13 @@
 * [Me Page](tutorials/me-page.md)
 
 
-## API
+## For Developers
 
 * [API Reference](API/README.md)
   * [Authentication](API/authentication.md)
   * [Content APIs](API/read-apis.md)
   * [Publishing APIs](API/write-apis.md)
   * [Webhooks](API/webhooks.md)
-
-## Smart Contracts
 
 * [Smart Contracts](smart-contracts/README.md)
   * [DXmaster](smart-contracts/dxmaster.md)
