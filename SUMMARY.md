@@ -31,6 +31,8 @@
   * [DXasset](smart-contracts/dxasset.md)
   * [DXassetFactory](smart-contracts/dxassetfactory.md)
 
+* [Subgraph](subgraph/README.md)
+
 ## Links
 
 * [dX](https://decentralizedx.netlify.app/)
