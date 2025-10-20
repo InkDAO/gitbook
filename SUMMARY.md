@@ -35,5 +35,5 @@
 
 ## Links
 
-* [dX](https://decentralizedx.netlify.app/)
+* [dX](https://decentralizedx.tech/)
 * [Telegram](https://t.me/decentralizedX0)
