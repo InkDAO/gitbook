@@ -1,6 +1,6 @@
 # API Documentation
 
-The dX API works in conjunction with smart contracts and IPFS to enable a complete Web3 content publishing and monetization platform. It provides the necessary backend infrastructure for content storage, authentication, and access control while maintaining decentralization principles.
+The InkDAO API works in conjunction with smart contracts and IPFS to enable a complete Web3 content publishing and monetization platform. It provides the necessary backend infrastructure for content storage, authentication, and access control while maintaining decentralization principles.
 
 ### Architecture
 
@@ -88,7 +88,7 @@ The API implements multiple layers of security to ensure data integrity and user
 ### Base URL
 
 ```
-https://api.decentralizedX.tech/
+https://api.inkdao.tech/
 ```
 
 ## API Categories

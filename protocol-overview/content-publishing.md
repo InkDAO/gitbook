@@ -1,10 +1,10 @@
 # Content Publishing
 
-Content publishing on decentralizedX turns your knowledge into permanent digital assets. Unlike traditional platforms that control your content and take large cuts, decentralizedX gives creators ownership and 95% of revenue (5% covers platform infrastructure like servers, IPFS hosting, and deployment costs).
+Content publishing on InkDAO turns your knowledge into permanent digital assets. Unlike traditional platforms that control your content and take large cuts, InkDAO gives creators ownership and 95% of revenue (5% covers platform infrastructure like servers, IPFS hosting, and deployment costs).
 
 ## What Makes Posts Different?
 
-Think of a post like a digital book that you publish and sell directly to your audience. Unlike Medium where the platform takes control, or YouTube that keeps 45% of earnings, decentralizedX takes only 5% for infrastructure—giving creators 95%. When Sarah publishes a smart contract guide, she's creating a permanent digital asset stored on IPFS, recorded on blockchain, priced however she wants—whether free for beginners or $50 for advanced content.
+Think of a post like a digital book that you publish and sell directly to your audience. Unlike Medium where the platform takes control, or YouTube that keeps 45% of earnings, InkDAO takes only 5% for infrastructure—giving creators 95%. When Sarah publishes a smart contract guide, she's creating a permanent digital asset stored on IPFS, recorded on blockchain, priced however she wants—whether free for beginners or $50 for advanced content.
 
 ## The Three Phases
 
@@ -16,7 +16,7 @@ Think of a post like a digital book that you publish and sell directly to your a
 
 ## Public vs Private Content
 
-DecentralizedX balances discovery with privacy cleverly. Everyone can see post titles, descriptions, thumbnails, prices, and how many people purchased. This helps readers decide if content is worth the price. But the actual content—the detailed explanations, code examples, and methodologies—remains private on IPFS, accessible only to the creator and those who bought it.
+InkDAO balances discovery with privacy cleverly. Everyone can see post titles, descriptions, thumbnails, prices, and how many people purchased. This helps readers decide if content is worth the price. But the actual content—the detailed explanations, code examples, and methodologies—remains private on IPFS, accessible only to the creator and those who bought it.
 
 ## Who Benefits?
 

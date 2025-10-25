@@ -1,18 +1,18 @@
 # Protocol Overview
 
-DecentralizedX is a Web3 content publishing platform that enables creators to monetize their knowledge directly through blockchain technology. At its core, it's built on a simple principle: creators should own their content and capture most of its value, without intermediaries taking large cuts.
+InkDAO is a Web3 content publishing platform that enables creators to monetize their knowledge directly through blockchain technology. At its core, it's built on a simple principle: creators should own their content and capture most of its value, without intermediaries taking large cuts.
 
 ## The Core Idea
 
-Think of decentralizedX as a digital marketplace for knowledge where creators publish content as digital assets. Unlike Medium where the platform controls everything, or YouTube where 45% goes to the platform, decentralizedX takes only 5% to cover infrastructure costs—the remaining 95% goes directly to creators.
+Think of InkDAO as a digital marketplace for knowledge where creators publish content as digital assets. Unlike Medium where the platform controls everything, or YouTube where 45% goes to the platform, InkDAO takes only 5% to cover infrastructure costs—the remaining 95% goes directly to creators.
 
-When someone publishes on decentralizedX, three things happen: their content is stored permanently on IPFS (distributed storage), ownership is recorded on Ethereum blockchain, and they set their own price. When someone purchases access, they're buying permanent ownership through blockchain tokens, not renting monthly access.
+When someone publishes on InkDAO, three things happen: their content is stored permanently on IPFS (distributed storage), ownership is recorded on Ethereum blockchain, and they set their own price. When someone purchases access, they're buying permanent ownership through blockchain tokens, not renting monthly access.
 
 ## How It's Different
 
 **Traditional Platforms**: Medium articles disappear if Medium shuts down. YouTube takes 45% of earnings. Substack charges 10% plus payment processing fees. Your content lives on company servers they control.
 
-**DecentralizedX**: Content lives on IPFS (can't be deleted by any single entity). Platform takes 5% for infrastructure, creators keep 95%. Readers buy content once and own it forever through blockchain tokens. No one can censor or remove your content.
+**InkDAO**: Content lives on IPFS (can't be deleted by any single entity). Platform takes 5% for infrastructure, creators keep 95%. Readers buy content once and own it forever through blockchain tokens. No one can censor or remove your content.
 
 ## The Four Pillars
 
@@ -26,7 +26,7 @@ When someone publishes on decentralizedX, three things happen: their content is 
 
 ## Who It's For
 
-**Creators**: Anyone with knowledge to share—developers, researchers, educators, analysts. If you can teach something valuable, you can earn on decentralizedX.
+**Creators**: Anyone with knowledge to share—developers, researchers, educators, analysts. If you can teach something valuable, you can earn on InkDAO.
 
 **Readers**: People seeking quality knowledge they can own permanently. Web3 enthusiasts, students, professionals, and anyone tired of renting access through subscriptions.
 
@@ -59,7 +59,7 @@ When someone publishes on decentralizedX, three things happen: their content is 
 
 ## Current Status
 
-DecentralizedX runs on Ethereum's Sepolia testnet, making it free to test and experiment. The 5% platform fee covers real infrastructure costs: IPFS pinning services, backend servers, deployment hosting, and ongoing maintenance. This sustainable model ensures the platform can operate long-term without venture capital or advertising.
+InkDAO runs on Ethereum's Sepolia testnet, making it free to test and experiment. The 5% platform fee covers real infrastructure costs: IPFS pinning services, backend servers, deployment hosting, and ongoing maintenance. This sustainable model ensures the platform can operate long-term without venture capital or advertising.
 
 ## The Vision
 

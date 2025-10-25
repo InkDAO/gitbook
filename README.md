@@ -4,19 +4,19 @@ description: A decentralized content publishing and monetization platform
 
 # Introduction
 
-<figure><img src=".gitbook/assets/dX_background.png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/InkDAO_CoverImage.png" alt=""><figcaption></figcaption></figure>
 
-**decentralizedX (dX)** is a Web3-powered content publishing platform that allows creators to publish high-quality knowledge content and monetize it directly through blockchain technology.  
-Built on **Ethereum and IPFS**, dX provides a censorship-resistant and transparent ecosystem where creators truly **own their content, community, and revenue.**
+**InkDAO** is a Web3-powered content publishing platform that allows creators to publish high-quality knowledge content and monetize it directly through blockchain technology.  
+Built on **Ethereum and IPFS**, InkDAO provides a censorship-resistant and transparent ecosystem where creators truly **own their content, community, and revenue.**
 
-Unlike traditional platforms that control distribution and take large commissions, dX ensures that all ownership and monetization rights remain with the creator. Every piece of content—whether an academic article, trading insight, or premium tutorial—is privately stored on IPFS and publicly verifiable on the blockchain.
+Unlike traditional platforms that control distribution and take large commissions, InkDAO ensures that all ownership and monetization rights remain with the creator. Every piece of content—whether an academic article, trading insight, or premium tutorial—is privately stored on IPFS and publicly verifiable on the blockchain.
 
 ### Our Vision  
-dX exists to redefine how knowledge creators publish and earn online. It empowers educators, researchers, analysts, and writers to build their own **decentralized knowledge economy**, where expertise becomes a self-sovereign digital asset.
+InkDAO exists to redefine how knowledge creators publish and earn online. It empowers educators, researchers, analysts, and writers to build their own **decentralized knowledge economy**, where expertise becomes a self-sovereign digital asset.
 
 ***
 
-## What Makes decentralizedX Unique?
+## What Makes InkDAO Unique?
 
 * **True Ownership:** Your content lives on IPFS with private access control. Only subscribers receive lifetime access via blockchain-verified ownership, ensuring transparency and security.
 * **Direct Monetization:** Set your own price and earn directly. Creators keep **95%** of their revenue—only **5%** supports platform infrastructure (IPFS hosting, smart contract operations).
@@ -29,12 +29,12 @@ dX exists to redefine how knowledge creators publish and earn online. It empower
 
 ## How It Works
 
-1. **Create:** Write and format your content with dX's built-in rich text editor.  
+1. **Create:** Write and format your content with InkDAO's built-in rich text editor.  
 2. **Publish:** Upload securely to IPFS and publish metadata on-chain.  
 3. **Monetize:** Choose your own pricing model—free, one-time payment, or community access.  
 4. **Earn:** Subscribers pay directly to your wallet and gain lifetime access through on-chain ownership validation.
 
 ***
 
-**In essence, decentralizedX turns knowledge into on-chain assets.**  
+**In essence, InkDAO turns knowledge into on-chain assets.**  
 Creators write on their own terms, communities support transparently, and knowledge flows freely—without gatekeepers or censorship.

@@ -1,15 +1,15 @@
 ---
 description: >-
   New to Web3? This guide will help you set up everything you need to start
-  creating and monetizing content on dX.
+  creating and monetizing content on InkDAO.
 ---
 
 # Getting Started
 
-Welcome to dX! You can browse posts and read free content without any setup, but you'll need a wallet to create posts, purchase content, or monetize your work.
+Welcome to InkDAO! You can browse posts and read free content without any setup, but you'll need a wallet to create posts, purchase content, or monetize your work.
 
-## Browsing dX (No Wallet Required)
-- Visit [decentralizedX](https://decentralizedx.tech/)
+## Browsing InkDAO (No Wallet Required)
+- Visit [InkDAO](https://inkdao.tech/)
 - Browse all posts on the homepage
 - View post metadata (title, description, thumbnail, price)
 - Read free posts (posts with 0 ETH price)
@@ -21,7 +21,7 @@ Welcome to dX! You can browse posts and read free content without any setup, but
 To create, publish, or purchase content, you'll need a crypto wallet. Here's how:
 
 ### 1. Install a Wallet
-decentralizedX supports multiple wallets through RainbowKit. We recommend:
+InkDAO supports multiple wallets through RainbowKit. We recommend:
 
 **MetaMask** (Most Popular):
 1. Visit [MetaMask's official website](https://metamask.io/)
@@ -45,7 +45,7 @@ decentralizedX supports multiple wallets through RainbowKit. We recommend:
    - This is your only backup if you lose access to your wallet
 
 ### 3. Get Test ETH (Sepolia Network)
-decentralizedX currently runs on the Sepolia testnet for testing purposes.
+InkDAO currently runs on the Sepolia testnet for testing purposes.
 
 1. Copy your wallet address from your wallet
 2. Visit a Sepolia faucet:
@@ -57,8 +57,8 @@ decentralizedX currently runs on the Sepolia testnet for testing purposes.
 
 **Note**: Test ETH has no real value. It's only used for testing on the Sepolia network.
 
-### 4. Connect to dX
-1. Visit [decentralizedX](https://decentralizedx.tech/)
+### 4. Connect to InkDAO
+1. Visit [InkDAO](https://inkdao.tech/)
 2. Click "Connect Wallet" button in the top right
 3. Select your wallet from the options
 4. Approve the connection request in your wallet

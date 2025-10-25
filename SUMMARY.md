@@ -1,6 +1,6 @@
 # Table of Contents
 
-## decentralizedX
+## InkDAO
 * [Introduction](README.md)
 
 ## Protocol Overview
@@ -35,5 +35,5 @@
 
 ## Links
 
-* [dX](https://decentralizedx.tech/)
-* [Telegram](https://t.me/decentralizedX0)
+* [InkDAO](https://inkdao.tech/)
+* [Telegram](https://t.me/ink_dao)

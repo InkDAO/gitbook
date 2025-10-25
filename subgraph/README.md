@@ -2,9 +2,9 @@
 
 ## Overview
 
-The **decentralizedX Subgraph** is a GraphQL API that indexes and provides efficient access to on-chain data from the decentralizedX protocol. Built on [The Graph](https://thegraph.com/), it tracks all content creation, purchases, and user activity across the platform in real-time.
+The **InkDAO Subgraph** is a GraphQL API that indexes and provides efficient access to on-chain data from the InkDAO protocol. Built on [The Graph](https://thegraph.com/), it tracks all content creation, purchases, and user activity across the platform in real-time.
 
-The subgraph monitors events from the DXmaster contract and all dynamically created DXasset contracts, maintaining a comprehensive view of the entire decentralizedX ecosystem.
+The subgraph monitors events from the DXmaster contract and all dynamically created DXasset contracts, maintaining a comprehensive view of the entire InkDAO ecosystem.
 
 ## Why Use the Subgraph?
 
@@ -72,4 +72,4 @@ The subgraph listens to the following smart contract events:
 * [The Graph Documentation](https://thegraph.com/docs/)
 * [AssemblyScript Documentation](https://www.assemblyscript.org/)
 * [GraphQL Documentation](https://graphql.org/learn/)
-* [decentralizedX Smart Contracts](../smart-contracts/README.md)
+* [InkDAO Smart Contracts](../smart-contracts/README.md)

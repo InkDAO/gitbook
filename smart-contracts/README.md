@@ -2,7 +2,7 @@
 
 ## Overview
 
-The dX platform smart contracts enable a decentralized content publishing and monetization platform. Creators publish content to IPFS with access controlled through blockchain-verified ownership. Each post becomes a unique ERC20 token that readers purchase for lifetime access.
+The InkDAO platform smart contracts enable a decentralized content publishing and monetization platform. Creators publish content to IPFS with access controlled through blockchain-verified ownership. Each post becomes a unique ERC20 token that readers purchase for lifetime access.
 
 ## Architecture
 

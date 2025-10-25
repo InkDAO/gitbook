@@ -1,12 +1,12 @@
 # Subscribing to Your First Post
 
-This tutorial will walk you through purchasing and accessing content on decentralizedX. Learn how to browse, preview, and subscribe to posts for lifetime access.
+This tutorial will walk you through purchasing and accessing content on InkDAO. Learn how to browse, preview, and subscribe to posts for lifetime access.
 
 ## Prerequisites
 
 Before starting, make sure you have:
 - ✅ A crypto wallet installed (MetaMask, Coinbase Wallet, etc.)
-- ✅ Connected your wallet to decentralizedX
+- ✅ Connected your wallet to InkDAO
 - ✅ Some Sepolia ETH in your wallet (for purchasing)
 - ✅ Authenticated with your wallet signature
 
@@ -15,7 +15,7 @@ If you haven't completed these steps, see [Getting Started](getting-started.md) 
 ## Understanding Subscriptions
 
 ### What is a Subscription?
-On decentralizedX, a "subscription" is a one-time purchase that grants you **lifetime access** to a post:
+On InkDAO, a "subscription" is a one-time purchase that grants you **lifetime access** to a post:
 - **One-time payment**: Pay once, access forever
 - **Token ownership**: You receive ERC20 tokens representing your access
 - **No expiration**: Access never expires
@@ -29,7 +29,7 @@ On decentralizedX, a "subscription" is a one-time purchase that grants you **lif
 ## Browsing Content
 
 ### Step 1: Navigate to Homepage
-1. Visit [decentralizedX](https://decentralizedx.tech/app)
+1. Visit [InkDAO](https://inkdao.tech/app)
 2. Find the post, you want to subscribe
 
 ## Previewing a Post

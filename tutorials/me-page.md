@@ -1,6 +1,6 @@
 # Me Page
 
-The Me Page is your personal dashboard on decentralizedX where you can manage all your content - both created and subscribed.
+The Me Page is your personal dashboard on InkDAO where you can manage all your content - both created and subscribed.
 
 ## Accessing the Me Page
 
@@ -67,5 +67,5 @@ Use the **dropdown menu at the top** of the Me Page to switch between:
 
 The dropdown makes it easy to navigate between your different content collections without leaving the page.
 
-The Me Page is your personal hub on decentralizedX - use it to manage your content creation and learning journey! 🚀
+The Me Page is your personal hub on InkDAO - use it to manage your content creation and learning journey! 🚀
 

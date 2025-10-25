@@ -1,12 +1,12 @@
 # Creating Your First Post
 
-This tutorial will walk you through creating and publishing your first post on dX. By the end, you'll have published content that can be monetized through blockchain-based subscriptions.
+This tutorial will walk you through creating and publishing your first post on InkDAO. By the end, you'll have published content that can be monetized through blockchain-based subscriptions.
 
 ## Prerequisites
 
 Before starting, make sure you have:
 - ✅ A crypto wallet installed (MetaMask, Coinbase Wallet, etc.)
-- ✅ Connected your wallet to decentralizedX
+- ✅ Connected your wallet to InkDAO
 - ✅ Some sepolia ETH in your wallet (for gas fees)
 - ✅ Authenticated with your wallet signature
 

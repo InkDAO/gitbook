@@ -2,7 +2,7 @@
 
 ## Overview
 
-DXconfig is the configuration management and access control contract for the dX platform. It maintains role-based permissions and stores critical protocol parameters.
+DXconfig is the configuration management and access control contract for the InkDAO platform. It maintains role-based permissions and stores critical protocol parameters.
 
 ## Contract Details
 

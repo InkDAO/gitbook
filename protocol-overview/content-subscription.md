@@ -1,12 +1,12 @@
 # Content Subscription
 
-DecentralizedX replaces traditional subscriptions with permanent ownership. Instead of paying monthly to rent access, readers buy content once and own it forever through blockchain tokens. This fundamental shift changes the economics and incentives for both creators and readers.
+InkDAO replaces traditional subscriptions with permanent ownership. Instead of paying monthly to rent access, readers buy content once and own it forever through blockchain tokens. This fundamental shift changes the economics and incentives for both creators and readers.
 
 ## Buy Once, Own Forever
 
-Traditional platforms operate on rental models: Netflix charges monthly—stop paying and everything disappears. Medium costs $5/month but you're renting access. DecentralizedX works differently: purchase a post once, own it permanently.
+Traditional platforms operate on rental models: Netflix charges monthly—stop paying and everything disappears. Medium costs $5/month but you're renting access. InkDAO works differently: purchase a post once, own it permanently.
 
-Think of buying a book. You pay once, own it forever, can read it anytime, lend it, or sell it. DecentralizedX brings this model to digital content through blockchain tokens that prove ownership.
+Think of buying a book. You pay once, own it forever, can read it anytime, lend it, or sell it. InkDAO brings this model to digital content through blockchain tokens that prove ownership.
 
 ## How Purchasing Works
 
@@ -22,7 +22,7 @@ Six months later, Lisa still uses that guide, having read it dozens of times. Sh
 
 ## The 5% Platform Fee
 
-Unlike traditional platforms that take 30-75% of revenue, decentralizedX takes only 5%. This fee covers real infrastructure costs:
+Unlike traditional platforms that take 30-75% of revenue, InkDAO takes only 5%. This fee covers real infrastructure costs:
 
 - **IPFS Hosting**: Pinata service for permanent file storage and private access control
 - **Backend Servers**: Authentication, access verification, content delivery
@@ -37,7 +37,7 @@ The remaining 95% goes directly to creators immediately upon purchase—no waiti
 **YouTube**: ~$3-5 per 1,000 views, platform takes 45%  
 **Udemy**: Platform takes 50-75% depending on acquisition
 **Patreon**: 5-12% plus payment processing fees (~3%)
-**DecentralizedX**: 5% total, creators get 95%, instant payment
+**InkDAO**: 5% total, creators get 95%, instant payment
 
 For a post priced at 0.02 ETH ($40):
 - Creator receives: 0.019 ETH ($38) per purchase
@@ -71,9 +71,9 @@ Creators use free content strategically:
 
 **Medium Subscription**: $5/month ($60/year). Stop paying? Lose all access. Forget to update payment? Access gone. Want to focus elsewhere? Still paying or lose everything.
 
-**DecentralizedX Purchase**: Buy once, own forever. Lisa's guide cost 0.02 ETH once. In five years, still 0.02 ETH total. Read it once or 100 times—same cost. Never use the platform again? Still own everything purchased. Tokens don't expire, don't require maintenance, don't depend on platform existence.
+**InkDAO Purchase**: Buy once, own forever. Lisa's guide cost 0.02 ETH once. In five years, still 0.02 ETH total. Read it once or 100 times—same cost. Never use the platform again? Still own everything purchased. Tokens don't expire, don't require maintenance, don't depend on platform existence.
 
-This especially benefits niche content. Traditional subscriptions need constant new content to justify monthly fees. DecentralizedX rewards quality over quantity—publish one definitive guide on a specialized topic, keep earning as new people discover it years later.
+This especially benefits niche content. Traditional subscriptions need constant new content to justify monthly fees. InkDAO rewards quality over quantity—publish one definitive guide on a specialized topic, keep earning as new people discover it years later.
 
 ## Purchase Flow Example
 
@@ -90,7 +90,7 @@ This especially benefits niche content. Traditional subscriptions need constant 
 
 Traditional platforms need constant content because they sell subscriptions. Readers expect regular updates for monthly fees, favoring quantity over quality.
 
-DecentralizedX's one-time purchase model rewards quality. A single excellent guide can earn for years. Niche content finds its audience without needing mass appeal. Creators optimize for long-term value, not short-term engagement.
+InkDAO's one-time purchase model rewards quality. A single excellent guide can earn for years. Niche content finds its audience without needing mass appeal. Creators optimize for long-term value, not short-term engagement.
 
 The protocol doesn't maximize time-on-platform or create addictive engagement loops. It facilitates direct transactions between creators offering value and readers willing to pay for it. Incentives align: create something genuinely useful, price fairly, earn when people value it.
 
