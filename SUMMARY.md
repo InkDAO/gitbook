@@ -33,6 +33,10 @@
 
 * [Subgraph](subgraph/README.md)
 
+## Brand Assets
+
+* [Brand Assets](brand-assets/brand-assets.md)
+
 ## Links
 
 * [InkDAO](https://inkdao.tech/)
