@@ -26,10 +26,8 @@
   * [Webhooks](API/webhooks.md)
 
 * [Smart Contracts](smart-contracts/README.md)
-  * [DXmaster](smart-contracts/dxmaster.md)
+  * [MarketPlace](smart-contracts/marketplace.md)
   * [DXconfig](smart-contracts/dxconfig.md)
-  * [DXasset](smart-contracts/dxasset.md)
-  * [DXassetFactory](smart-contracts/dxassetfactory.md)
 
 * [Subgraph](subgraph/README.md)
 

@@ -10,9 +10,9 @@ Think of a post like a digital book that you publish and sell directly to your a
 
 **Draft**: Marcus saves his Web3 security guide privately on IPFS. He can edit it as many times as needed until it's perfect. No pressure, no deadlines—just him and his content.
 
-**Published**: Marcus publishes to the blockchain. His post becomes a unique digital asset with its own smart contract. He sets the price at 0.05 ETH ($100), adds a thumbnail and description, and it's permanent. The blockchain proves Marcus wrote it and when.
+**Published**: Marcus publishes to the blockchain. His post becomes a unique digital asset assigned a token ID in the MarketPlace contract (ERC-6909). He sets the price at 0.05 ETH ($100), adds a thumbnail and description, and it's permanent. The blockchain proves Marcus wrote it and when.
 
-**Purchased**: When Elena buys Marcus's guide for 0.05 ETH, 95% (0.0475 ETH) goes to Marcus's wallet and 5% (0.0025 ETH) goes to platform infrastructure. She receives ERC20 tokens proving her ownership. Her access never expires—she owns it forever, not just renting it.
+**Purchased**: When Elena buys Marcus's guide for 0.05 ETH, 95% (0.0475 ETH) goes to Marcus's wallet and 5% (0.0025 ETH) goes to platform infrastructure. She receives ERC-6909 tokens (1 unit of that token ID) proving her ownership. Her access never expires—she owns it forever through non-transferable tokens, not just renting it.
 
 ## Public vs Private Content
 

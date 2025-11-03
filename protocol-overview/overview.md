@@ -16,9 +16,9 @@ When someone publishes on InkDAO, three things happen: their content is stored p
 
 ## The Four Pillars
 
-**1. Content Publishing**: Creators use a rich text editor to write posts with images, code, and more. They save drafts privately, then publish to the blockchain when ready. Each post becomes a unique digital asset with its own smart contract.
+**1. Content Publishing**: Creators use a rich text editor to write posts with images, code, and more. They save drafts privately, then publish to the blockchain when ready. Each post becomes a unique digital asset represented by a token ID in the MarketPlace contract (ERC-6909 multi-token standard).
 
-**2. Subscription Model**: Readers pay once for lifetime access—no monthly subscriptions. They receive blockchain tokens proving ownership. These tokens can be transferred, gifted, or even sold. Access never expires.
+**2. Subscription Model**: Readers pay once for lifetime access—no monthly subscriptions. They receive non-transferable blockchain tokens (soul-bound) proving ownership. Access never expires and is permanently tied to their wallet.
 
 **3. Storage Architecture**: Content lives on IPFS (distributed, permanent) while ownership records live on Ethereum blockchain (immutable, transparent). This hybrid approach provides permanence without centralization.
 
@@ -43,11 +43,11 @@ When someone publishes on InkDAO, three things happen: their content is stored p
 ## How It Works (Simple Flow)
 
 1. **Create**: Write content in the editor, save drafts privately on IPFS
-2. **Publish**: Add thumbnail, description, and price. Publish to blockchain (creates unique smart contract)
+2. **Publish**: Add thumbnail, description, and price. Publish to blockchain (assigns unique token ID in MarketPlace contract)
 3. **Discover**: Readers browse posts, see metadata and prices
-4. **Purchase**: Reader pays (95% to creator, 5% to platform), receives blockchain tokens
-5. **Access**: Token ownership verified, content served from IPFS
-6. **Own**: Reader has lifetime access, can transfer tokens to others
+4. **Purchase**: Reader pays (95% to creator, 5% to platform), receives non-transferable blockchain tokens
+5. **Access**: Token ownership verified via ERC-6909 balance check, content served from IPFS
+6. **Own**: Reader has permanent access through soul-bound tokens tied to their wallet
 
 ## The Technology
 

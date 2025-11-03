@@ -15,13 +15,14 @@ This API is powered by **Edge Functions**, a serverless computing architecture t
 ### Key Features & Benefits
 
 #### 1. Passwordless Authentication
-**Technique**: Ethereum wallet signature-based authentication using EIP-191 standard
+**Technique**: Ethereum wallet signature-based authentication using EIP-4361 (Sign-In with Ethereum) standard
 
 **Benefits:**
 - No passwords to remember or manage
-- Cryptographically secure authentication
+- Cryptographically secure authentication using SIWE (Sign-In with Ethereum) protocol
+- Standardized authentication format with human-readable messages
 - Users maintain full control of their identity
-- Seamless Web3 integration
+- Seamless Web3 integration with widely adopted standard
 
 #### 2. Decentralized File Storage
 **Technique**: IPFS (InterPlanetary File System) with Pinata pinning service
@@ -80,10 +81,13 @@ This API is powered by **Edge Functions**, a serverless computing architecture t
 
 The API implements multiple layers of security to ensure data integrity and user protection:
 
-1. **Cryptographic Authentication**: All authentication uses Ethereum's battle-tested signature algorithms
-2. **HMAC Webhook Verification**: Webhooks are validated using SHA-256 cryptographic signatures
-3. **Ownership Verification**: All file operations verify ownership through smart contracts or metadata
-4. **Automatic Token Expiration**: JWT tokens expire after 2 hours to limit exposure window
+1. **EIP-4361 (SIWE) Authentication**: Login uses Sign-In with Ethereum standard for secure, human-readable authentication
+2. **EIP-712 Typed Signatures**: All write operations use typed structured data signing for enhanced security and UX
+3. **HMAC Webhook Verification**: Webhooks are validated using SHA-256 cryptographic signatures
+4. **Ownership Verification**: All file operations verify ownership through smart contracts or metadata
+5. **Automatic Token Expiration**: JWT tokens expire after 2 hours to limit exposure window
+6. **Time-based Replay Protection**: All signatures include timestamps and are validated within 60 seconds
+7. **Domain Separation**: EIP-712 signatures are bound to specific application domains preventing cross-app attacks
 
 ### Base URL
 
@@ -103,11 +107,13 @@ Signature-based authentication and JWT token management
 Retrieve files and asset content with proper access control
 
 **Endpoints:**
-- `GET /fileByCid` - Get draft file content
+- `GET /filesByTags` - Get files filtered by hashtags (public)
+- `GET /fileByCid` - Get draft file content (owner only)
 - `GET /pendingFilesByOwner` - Get user's draft files
-- `GET /filesByOwnerByNextPageToken` - Paginated file retrieval
-- `GET /fileByAssetAddress` - Get published asset (requires token)
-- `GET /freeFileByAddress` - Get free published asset
+- `GET /filesByNextPageToken` - Paginated file retrieval (public)
+- `GET /fileByPostId` - Get published post content (requires token ownership)
+- `GET /freeFileByPostId` - Get free published post (public)
+- `GET /filesMetaData` - Get file metadata (public)
 
 ### [3. Write APIs](./write-apis.md)
 Create, update, publish, and delete files

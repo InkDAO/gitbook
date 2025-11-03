@@ -16,9 +16,9 @@ When Lisa finds "Complete Guide to Upgradeable Smart Contracts" priced at 0.02 E
 
 **Blockchain Records**: Her purchase is stored permanently on Ethereum—immutable and transparent across thousands of nodes.
 
-**Token Ownership**: ERC20 tokens are minted to Lisa's wallet, proving her ownership and granting permanent access.
+**Token Ownership**: ERC-6909 tokens (1 unit of that post's token ID) are minted to Lisa's wallet, proving her ownership and granting permanent access. These tokens are non-transferable (soul-bound), preventing unauthorized resale while ensuring permanent access.
 
-Six months later, Lisa still uses that guide, having read it dozens of times. She paid once, owns it completely, and can even transfer the tokens to gift access to someone else.
+Six months later, Lisa still uses that guide, having read it dozens of times. She paid once, and the access is permanently tied to her wallet—she can't lose it or have it taken away.
 
 ## The 5% Platform Fee
 
@@ -48,13 +48,13 @@ All payments direct to the creator's wallet, no intermediary holding funds.
 
 ## Token Ownership Benefits
 
-The ERC20 tokens readers receive aren't just receipts—they're programmable ownership with unique possibilities:
+The ERC-6909 tokens readers receive aren't just receipts—they're permanent proof of ownership with unique properties:
 
-**Gifting**: Purchase valuable content and transfer tokens to someone else as a gift—no accounts needed, no platform restrictions.
+**Non-Transferable Access**: Tokens are soul-bound to your wallet, preventing unauthorized resale of access rights while ensuring you can never lose access. Your ownership is permanent and tied directly to you.
 
-**Inheritance**: Your collection of educational content is represented by tokens in your wallet—can be inherited or bequeathed like other digital assets.
+**Permanent Record**: Your collection of educational content is represented by token balances in your wallet—a permanent, verifiable record of your learning journey that can't be taken away.
 
-**Proof of Learning**: Your wallet's tokens tell a verifiable story about your knowledge journey. A wallet with advanced cryptography, security, and DeFi course tokens demonstrates serious commitment to learning.
+**Proof of Learning**: Your wallet's token holdings tell a verifiable story about your knowledge journey. A wallet with advanced cryptography, security, and DeFi course token balances demonstrates serious commitment to learning.
 
 ## Free Content Strategy
 
@@ -71,7 +71,7 @@ Creators use free content strategically:
 
 **Medium Subscription**: $5/month ($60/year). Stop paying? Lose all access. Forget to update payment? Access gone. Want to focus elsewhere? Still paying or lose everything.
 
-**InkDAO Purchase**: Buy once, own forever. Lisa's guide cost 0.02 ETH once. In five years, still 0.02 ETH total. Read it once or 100 times—same cost. Never use the platform again? Still own everything purchased. Tokens don't expire, don't require maintenance, don't depend on platform existence.
+**InkDAO Purchase**: Buy once, own forever. Lisa's guide cost 0.02 ETH once. In five years, still 0.02 ETH total. Read it once or 100 times—same cost. Never use the platform again? Still own everything purchased. Token balances don't expire, don't require maintenance, are permanently recorded on the blockchain.
 
 This especially benefits niche content. Traditional subscriptions need constant new content to justify monthly fees. InkDAO rewards quality over quantity—publish one definitive guide on a specialized topic, keep earning as new people discover it years later.
 
@@ -82,9 +82,9 @@ This especially benefits niche content. Traditional subscriptions need constant 
 3. **Decision**: Decides content is worth the price
 4. **Purchase**: Clicks buy, wallet opens, confirms transaction
 5. **Split**: 95% to creator, 5% to platform infrastructure
-6. **Tokens**: ERC20 tokens minted to reader's wallet
-7. **Access**: Backend verifies token ownership, serves content from IPFS
-8. **Forever**: Reader owns access permanently through tokens
+6. **Tokens**: ERC-6909 tokens (1 unit of that token ID) minted to reader's wallet
+7. **Access**: Backend verifies token balance via blockchain, serves content from IPFS
+8. **Forever**: Reader owns access permanently through non-transferable token balance
 
 ## Why This Model Works
 

@@ -4,6 +4,60 @@ Read APIs allow retrieval of file content and metadata with appropriate access c
 
 ---
 
+## GET /filesByTags
+
+Retrieves files filtered by hashtags with pagination support. This endpoint allows public access to discover content by categories.
+
+### Description
+
+This endpoint returns a list of files that match the specified hashtags. Multiple hashtags can be provided as a comma-separated list. Results are paginated with a maximum of 9 files per page. Use the returned `next_page_token` with `/filesByNextPageToken` to fetch subsequent pages.
+
+**Access Control:**
+- Public access (no authentication required)
+- Returns metadata for files tagged with the specified hashtags
+
+### Request
+
+**Endpoint:** `GET /filesByTags?tags={tag1,tag2,tag3}`
+
+**Query Parameters:**
+- **tags**: Comma-separated list of hashtags to filter by (e.g., "web3,crypto,tutorial")
+
+**Example Request:**
+```
+GET /filesByTags?tags=web3,crypto,defi
+```
+
+### Response
+
+**Success Response (200 OK):**
+
+```json
+{
+  "files": [
+    {
+      "id": "01234567-89ab-cdef-0123-456789abcdef",
+      "name": "742d35cc6634c0532925a3b844bc9e7595f0beb_7472000000",
+      "cid": "QmX1234567890abcdefghijklmnopqrstuvwxyz",
+      "size": 2048,
+      "created_at": "2024-10-16T12:00:00.000Z",
+      "group_id": "01234567-89ab-cdef-0123-456789abcdef",
+      "keyvalues": {
+        "web3": "web3",
+        "crypto": "crypto",
+        "defi": "defi",
+        "publishedAt": "2024-10-16T12:00:00.000Z"
+      }
+    }
+  ],
+  "count": 1,
+  "tags": ["web3", "crypto", "defi"],
+  "next_page_token": "eyJvZmZzZXQiOiI5In0"
+}
+```
+
+---
+
 ## GET /fileByCid
 
 Retrieves the content of a draft file by its IPFS Content Identifier (CID). This endpoint is restricted to file owners only.
@@ -97,31 +151,25 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
 
 ---
 
-## GET /filesByOwnerByNextPageToken
+## GET /filesByNextPageToken
 
 Retrieves the next page of files using a pagination token from a previous request.
 
 ### Description
 
-This endpoint continues pagination from `/pendingFilesByOwner` by using the `next_page_token` returned in the previous response. Each page returns up to 9 files.
+This endpoint continues pagination from any previous list request by using the `next_page_token` returned in the previous response. Each page returns up to 9 files. This endpoint is generic and works with any pagination token.
 
 **Access Control:**
-- Requires JWT authentication
+- No authentication required (public access)
 - Must provide valid pagination token from previous request
 
 ### Request
 
-**Endpoint:** `GET /filesByOwnerByNextPageToken?owner={address}&next_page_token={token}`
-
-**Headers:**
-```
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
-```
+**Endpoint:** `GET /filesByNextPageToken?next_page_token={token}`
 
 **Example Request:**
 ```
-GET /filesByOwnerByNextPageToken?owner=0x742d35cc6634c0532925a3b844bc9e7595f0beb&next_page_token=eyJvZmZzZXQiOiIxMiJ9
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
+GET /filesByNextPageToken?next_page_token=eyJvZmZzZXQiOiIxMiJ9
 ```
 
 ### Response
@@ -150,32 +198,36 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
 
 ---
 
-## GET /fileByAssetAddress
+## GET /fileByPostId
 
-Retrieves published asset content based on ERC20 token ownership. Access is granted to token holders and the asset author.
+Retrieves published asset content based on ERC-6909 token ownership. Access is granted to token holders and the post author.
 
 ### Description
 
-This endpoint provides access to published assets (files with `onchain` status). Access is controlled through blockchain smart contracts - users must either own the dXasset ERC20 tokens or be the asset author. The endpoint verifies ownership on-chain before returning content.
+This endpoint provides access to published posts (files with `onchain` status). Access is controlled through blockchain smart contracts - users must either own the post tokens (ERC-6909) or be the post author. The endpoint verifies ownership on-chain before returning content.
 
 **Access Control:**
 - Requires JWT authentication
-- User must own dXasset tokens OR be the asset author
-- Verifies ownership via blockchain smart contract
-- Free assets (price = 0) still require authentication but no token ownership
+- User must own post tokens (ERC-6909 balance > 0) OR be the post author
+- Verifies ownership via blockchain smart contract (MarketPlace contract)
+- Free posts (price = 0) still require authentication but no token ownership
 
 ### Request
 
-**Endpoint:** `GET /fileByAssetAddress?user={address}&assetAddress={contractAddress}`
+**Endpoint:** `GET /fileByPostId?user={address}&postId={tokenId}`
 
 **Headers:**
 ```
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
 ```
 
+**Query Parameters:**
+- **user**: The Ethereum address requesting access
+- **postId**: The token ID of the post (from the MarketPlace contract)
+
 **Example Request:**
 ```
-GET /fileByAssetAddress?user=0x742d35cc6634c0532925a3b844bc9e7595f0beb&assetAddress=0x1234567890123456789012345678901234567890
+GET /fileByPostId?user=0x742d35cc6634c0532925a3b844bc9e7595f0beb&postId=1
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
 ```
 
@@ -192,26 +244,29 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
 
 ---
 
-## GET /freeFileByAddress
+## GET /freeFileByPostId
 
-Retrieves content for assets with zero price (free assets). No authentication or token ownership required.
+Retrieves content for posts with zero price (free posts). No authentication or token ownership required.
 
 ### Description
 
-This endpoint provides public access to free assets (assets with price set to 0 ETH). It first verifies the asset price on-chain, and only returns content if the price is zero. This allows creators to share content publicly without requiring users to purchase tokens.
+This endpoint provides public access to free posts (posts with price set to 0). It first verifies the post price on-chain, and only returns content if the price is zero. This allows creators to share content publicly without requiring users to purchase tokens.
 
 **Access Control:**
 - No authentication required
-- Asset price must be 0 (verified on-chain)
+- Post price must be 0 (verified on-chain via MarketPlace contract)
 - Public access for everyone
 
 ### Request
 
-**Endpoint:** `GET /freeFileByAddress?assetAddress={contractAddress}`
+**Endpoint:** `GET /freeFileByPostId?postId={tokenId}`
+
+**Query Parameters:**
+- **postId**: The token ID of the post (from the MarketPlace contract)
 
 **Example Request:**
 ```
-GET /freeFileByAddress?assetAddress=0x1234567890123456789012345678901234567890
+GET /freeFileByPostId?postId=1
 ```
 
 ### Response
@@ -222,6 +277,58 @@ GET /freeFileByAddress?assetAddress=0x1234567890123456789012345678901234567890
 {
   "content": "Free asset content available to everyone",
   "lang": "ts"
+}
+```
+
+---
+
+## GET /filesMetaData
+
+Retrieves metadata for files, optionally filtered by CID. Returns file information without content.
+
+### Description
+
+This endpoint returns metadata for files stored in IPFS via Pinata. If no CID is provided, it returns up to 9 recent files. If a CID is provided, it returns metadata for that specific file. This is useful for getting file information without downloading the actual content.
+
+**Access Control:**
+- Public access (no authentication required)
+- Returns file metadata only (no content)
+
+### Request
+
+**Endpoint:** `GET /filesMetaData` or `GET /filesMetaData?cid={fileCid}`
+
+**Query Parameters (Optional):**
+- **cid**: The IPFS CID of a specific file to query
+
+**Example Requests:**
+```
+GET /filesMetaData
+GET /filesMetaData?cid=QmX1234567890abcdefghijklmnopqrstuvwxyz
+```
+
+### Response
+
+**Success Response (200 OK):**
+
+```json
+{
+  "files": [
+    {
+      "id": "01234567-89ab-cdef-0123-456789abcdef",
+      "name": "742d35cc6634c0532925a3b844bc9e7595f0beb_7472000000",
+      "cid": "QmX1234567890abcdefghijklmnopqrstuvwxyz",
+      "size": 2048,
+      "created_at": "2024-10-16T12:00:00.000Z",
+      "group_id": "01234567-89ab-cdef-0123-456789abcdef",
+      "keyvalues": {
+        "owner": "0x742d35cc6634c0532925a3b844bc9e7595f0beb",
+        "status": "pending",
+        "web3": "web3"
+      }
+    }
+  ],
+  "next_page_token": "eyJvZmZzZXQiOiI5In0"
 }
 ```
 

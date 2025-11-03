@@ -2,9 +2,9 @@
 
 ## Overview
 
-The **InkDAO Subgraph** is a GraphQL API that indexes and provides efficient access to on-chain data from the InkDAO protocol. Built on [The Graph](https://thegraph.com/), it tracks all content creation, purchases, and user activity across the platform in real-time.
+The **InkDAO Subgraph** is a GraphQL API that indexes and provides efficient access to on-chain data from the InkDAO protocol. Built on [The Graph](https://thegraph.com/), it tracks all content creation, subscriptions, and user activity across the platform in real-time.
 
-The subgraph monitors events from the DXmaster contract and all dynamically created DXasset contracts, maintaining a comprehensive view of the entire InkDAO ecosystem.
+The subgraph monitors events from the **MarketPlace** contract (ERC-6909 multi-token implementation), maintaining a comprehensive view of the entire InkDAO ecosystem within a single contract.
 
 ## Why Use the Subgraph?
 
@@ -18,58 +18,136 @@ While you can query blockchain data directly, the subgraph provides several adva
 
 ## Event Handlers
 
-The subgraph listens to the following smart contract events:
+The subgraph listens to the following smart contract events from the MarketPlace contract:
 
-### DXmaster Events
+### PostCreated
 
-**AssetAdded**
-- Triggered when a new asset is published
-- Creates Asset and Creator entities
-- Updates GlobalStats
+**Event Signature:**
+```solidity
+event PostCreated(
+    uint256 indexed tokenId,
+    string postTitle,
+    string postCid,
+    string thumbnailCid,
+    address indexed author,
+    uint256 costInNativeInWei
+);
+```
 
-**AssetBought**
-- Triggered when a user purchases an asset
-- Creates Purchase and Holder entities
-- Updates creator earnings and platform statistics
+**Handler:** `handlePostCreated`
 
-### DXasset Events (Dynamic)
+**Actions:**
+- Creates or updates Asset entity with post metadata
+- Creates or updates Creator entity for the author
+- Increments creator's total assets and asset worth
+- Updates GlobalStats (total assets, creators, asset worth)
+- Tracks user statistics
 
-**Transfer**
-- Triggered when asset tokens are transferred between users
-- Updates Purchase balances for both parties
-- Tracks secondary market activity
+**Use Case:** Triggered when a creator publishes a new post on the platform
+
+---
+
+### PostSubscribed
+
+**Event Signature:**
+```solidity
+event PostSubscribed(
+    uint256 indexed tokenId,
+    address indexed subscriber,
+    uint256 totalCost
+);
+```
+
+**Handler:** `handlePostSubscribed`
+
+**Actions:**
+- Updates Asset entity (increments total subscribers)
+- Updates Creator entity (increments total subscribers and earnings)
+- Creates or updates Holder entity for the subscriber
+- Updates GlobalStats (purchases, volume, revenue)
+- Calculates and tracks platform fees
+- Tracks user statistics
+
+**Use Case:** Triggered when a user subscribes to a post (purchases access)
 
 ## Architecture
 
 ```
-┌─────────────────┐
-│  Smart Contracts│
-│                 │
-│   - DXmaster    │
-│   - DXasset     │
-└────────┬────────┘
-         │ Events
-         ▼
-┌─────────────────┐
-│  Subgraph       │
-│                 │
-│  - Event        │
-│    Handlers     │
-│  - Mappings     │
-└────────┬────────┘
-         │ Indexes
-         ▼
-┌─────────────────┐
-│  GraphQL API    │
-│                 │
-│  - Queries      │
-│  - Subscriptions│
-└─────────────────┘
+┌──────────────────────┐
+│  Smart Contract      │
+│                      │
+│  MarketPlace         │
+│  (ERC-6909)          │
+│                      │
+│  Events:             │
+│  - PostCreated       │
+│  - PostSubscribed    │
+└──────────┬───────────┘
+           │ Events
+           ▼
+┌──────────────────────┐
+│  Subgraph            │
+│                      │
+│  Event Handlers:     │
+│  - handlePostCreated │
+│  - handlePostSubscribed│
+│                      │
+│  Mappings:           │
+│  - marketPlace.ts    │
+└──────────┬───────────┘
+           │ Indexes
+           ▼
+┌──────────────────────┐
+│  GraphQL API         │
+│                      │
+│  Entities:           │
+│  - Asset             │
+│  - Creator           │
+│  - Holder            │
+│  - GlobalStats       │
+└──────────────────────┘
 ```
+
+## Key Features
+
+### Real-time Indexing
+- Events are indexed as soon as blocks are mined
+- Sub-second query response times
+- Automatic updates on new transactions
+
+### ERC-6909 Optimization
+- Single contract to monitor (vs. N contracts in ERC-20 approach)
+- Simpler event structure
+- More efficient indexing
+- Lower infrastructure costs
+
+### Non-Transferable Tokens
+- No secondary market transfer events to track
+- Simpler holder tracking
+- Permanent subscription records
+- Clear ownership history
+
+### Platform Analytics
+- Real-time creator earnings
+- Platform fee tracking
+- User engagement metrics
+- Content performance analytics
+
+## Benefits Over Direct Contract Queries
+
+| Feature | Direct Contract | Subgraph |
+|---------|----------------|----------|
+| **Query Speed** | Slow (RPC calls) | Fast (indexed) |
+| **Historical Data** | Limited | Complete |
+| **Complex Queries** | Multiple calls | Single query |
+| **Filtering** | Client-side | Server-side |
+| **Sorting** | Manual | Built-in |
+| **Aggregations** | Manual calculation | Pre-computed |
+| **Pagination** | Complex | Simple |
+| **Cost** | RPC rate limits | Free queries |
 
 ## Resources
 
 * [The Graph Documentation](https://thegraph.com/docs/)
-* [AssemblyScript Documentation](https://www.assemblyscript.org/)
 * [GraphQL Documentation](https://graphql.org/learn/)
 * [InkDAO Smart Contracts](../smart-contracts/README.md)
