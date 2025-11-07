@@ -19,7 +19,7 @@ InkDAO exists to redefine how knowledge creators publish and earn online. It emp
 ## What Makes InkDAO Unique?
 
 * **True Ownership:** Your content lives on IPFS with private access control. Only subscribers receive lifetime access via blockchain-verified ownership, ensuring transparency and security.
-* **Direct Monetization:** Set your own price and earn directly. Creators keep **95%** of their revenue—only **5%** supports platform infrastructure (IPFS hosting, smart contract operations).
+* **Direct Monetization:** Set your own price and earn directly. Creators keep **100%** of their revenue, no intermediaries, no platform taking a cut.
 * **Wallet-Based Identity:** No signups, emails, or user data. Your wallet address is your secure digital identity, ensuring privacy and authenticity.
 * **Decentralized Storage:** All posts are stored on IPFS, guaranteeing permanence, resistance to censorship, and independence from centralized servers.
 * **Transparent and Trustless:** Payments, subscriptions, and ownership records are fully verifiable on Ethereum, providing creators and subscribers complete transparency.

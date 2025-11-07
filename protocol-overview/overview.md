@@ -4,7 +4,7 @@ InkDAO is a Web3 content publishing platform that enables creators to monetize t
 
 ## The Core Idea
 
-Think of InkDAO as a digital marketplace for knowledge where creators publish content as digital assets. Unlike Medium where the platform controls everything, or YouTube where 45% goes to the platform, InkDAO takes only 5% to cover infrastructure costs—the remaining 95% goes directly to creators.
+Think of InkDAO as a digital marketplace for knowledge where creators publish content as digital assets. Unlike Medium where the platform controls everything, or YouTube where 45% goes to the platform, InkDAO is truly decentralized with no intermediaries, 100% of revenue goes directly to creators.
 
 When someone publishes on InkDAO, three things happen: their content is stored permanently on IPFS (distributed storage), ownership is recorded on Ethereum blockchain, and they set their own price. When someone purchases access, they're buying permanent ownership through blockchain tokens, not renting monthly access.
 
@@ -12,7 +12,7 @@ When someone publishes on InkDAO, three things happen: their content is stored p
 
 **Traditional Platforms**: Medium articles disappear if Medium shuts down. YouTube takes 45% of earnings. Substack charges 10% plus payment processing fees. Your content lives on company servers they control.
 
-**InkDAO**: Content lives on IPFS (can't be deleted by any single entity). Platform takes 5% for infrastructure, creators keep 95%. Readers buy content once and own it forever through blockchain tokens. No one can censor or remove your content.
+**InkDAO**: Content lives on IPFS (can't be deleted by any single entity). Truly decentralized with no intermediaries—creators keep 100%. Readers buy content once and own it forever through blockchain tokens. No one can censor or remove your content.
 
 ## The Four Pillars
 
@@ -22,7 +22,7 @@ When someone publishes on InkDAO, three things happen: their content is stored p
 
 **3. Storage Architecture**: Content lives on IPFS (distributed, permanent) while ownership records live on Ethereum blockchain (immutable, transparent). This hybrid approach provides permanence without centralization.
 
-**4. Economic Model**: Creators set any price from free to premium. 95% goes to creators, 5% covers platform infrastructure (servers, IPFS hosting, deployment costs). Payments are instant and direct to creator wallets.
+**4. Economic Model**: Creators set any price from free to premium. 100% goes to creators—no intermediaries. Payments are instant and direct to creator wallets.
 
 ## Who It's For
 
@@ -34,7 +34,7 @@ When someone publishes on InkDAO, three things happen: their content is stored p
 
 ## The Value Proposition
 
-**For Creators**: Keep 95% of revenue, own your content, reach global audience, build permanent value (posts keep earning years later), no platform lock-in.
+**For Creators**: Keep 100% of revenue, own your content, reach global audience, build permanent value (posts keep earning years later), no platform lock-in.
 
 **For Readers**: Buy once, own forever. No subscriptions, no expiring access, true ownership through blockchain tokens, support creators directly.
 
@@ -45,7 +45,7 @@ When someone publishes on InkDAO, three things happen: their content is stored p
 1. **Create**: Write content in the editor, save drafts privately on IPFS
 2. **Publish**: Add thumbnail, description, and price. Publish to blockchain (assigns unique token ID in MarketPlace contract)
 3. **Discover**: Readers browse posts, see metadata and prices
-4. **Purchase**: Reader pays (95% to creator, 5% to platform), receives non-transferable blockchain tokens
+4. **Purchase**: Reader pays (100% to creator), receives non-transferable blockchain tokens
 5. **Access**: Token ownership verified via ERC-6909 balance check, content served from IPFS
 6. **Own**: Reader has permanent access through soul-bound tokens tied to their wallet
 
@@ -59,7 +59,7 @@ When someone publishes on InkDAO, three things happen: their content is stored p
 
 ## Current Status
 
-InkDAO runs on Ethereum's Sepolia testnet, making it free to test and experiment. The 5% platform fee covers real infrastructure costs: IPFS pinning services, backend servers, deployment hosting, and ongoing maintenance. This sustainable model ensures the platform can operate long-term without venture capital or advertising.
+InkDAO runs on Ethereum's Sepolia testnet, making it free to test and experiment. As a fully decentralized platform, all revenue flows directly to creators without any intermediaries. The platform operates as a public good, ensuring content creators retain complete ownership of their earnings.
 
 ## The Vision
 

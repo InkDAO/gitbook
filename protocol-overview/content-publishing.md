@@ -1,10 +1,10 @@
 # Content Publishing
 
-Content publishing on InkDAO turns your knowledge into permanent digital assets. Unlike traditional platforms that control your content and take large cuts, InkDAO gives creators ownership and 95% of revenue (5% covers platform infrastructure like servers, IPFS hosting, and deployment costs).
+Content publishing on InkDAO turns your knowledge into permanent digital assets. Unlike traditional platforms that control your content and take large cuts, InkDAO is fully decentralized and gives creators 100% of revenue—no intermediaries taking a cut.
 
 ## What Makes Posts Different?
 
-Think of a post like a digital book that you publish and sell directly to your audience. Unlike Medium where the platform takes control, or YouTube that keeps 45% of earnings, InkDAO takes only 5% for infrastructure—giving creators 95%. When Sarah publishes a smart contract guide, she's creating a permanent digital asset stored on IPFS, recorded on blockchain, priced however she wants—whether free for beginners or $50 for advanced content.
+Think of a post like a digital book that you publish and sell directly to your audience. Unlike Medium where the platform takes control, or YouTube that keeps 45% of earnings, InkDAO gives creators 100% with no intermediaries. When Sarah publishes a smart contract guide, she's creating a permanent digital asset stored on IPFS, recorded on blockchain, priced however she wants—whether free for beginners or $50 for advanced content.
 
 ## The Three Phases
 
@@ -12,7 +12,7 @@ Think of a post like a digital book that you publish and sell directly to your a
 
 **Published**: Marcus publishes to the blockchain. His post becomes a unique digital asset assigned a token ID in the MarketPlace contract (ERC-6909). He sets the price at 0.05 ETH ($100), adds a thumbnail and description, and it's permanent. The blockchain proves Marcus wrote it and when.
 
-**Purchased**: When Elena buys Marcus's guide for 0.05 ETH, 95% (0.0475 ETH) goes to Marcus's wallet and 5% (0.0025 ETH) goes to platform infrastructure. She receives ERC-6909 tokens (1 unit of that token ID) proving her ownership. Her access never expires—she owns it forever through non-transferable tokens, not just renting it.
+**Purchased**: When Elena buys Marcus's guide for 0.05 ETH, the full 0.05 ETH goes directly to Marcus's wallet. She receives ERC-6909 tokens (1 unit of that token ID) proving her ownership. Her access never expires—she owns it forever through non-transferable tokens, not just renting it.
 
 ## Public vs Private Content
 
@@ -20,7 +20,7 @@ InkDAO balances discovery with privacy cleverly. Everyone can see post titles, d
 
 ## Who Benefits?
 
-**Knowledge Entrepreneurs** like Priya publish DeFi analysis, building an audience of 500 subscribers and earning 14.25 ETH ($28,500) after the 5% platform fee (which covers infrastructure costs).
+**Knowledge Entrepreneurs** like Priya publish DeFi analysis, building an audience of 500 subscribers and earning 15 ETH ($30,000) with 100% of revenue going directly to her wallet.
 
 **Technical Educators** like James publish free beginner content to build reputation, then charge 0.02-0.05 ETH for intermediate and advanced tutorials. Students get lifetime access.
 
@@ -30,7 +30,7 @@ InkDAO balances discovery with privacy cleverly. Everyone can see post titles, d
 
 ## Direct Creator-Reader Relationship
 
-When Miguel buys a post about Layer 2 solutions for 0.03 ETH, 95% (0.0285 ETH) goes directly to the creator and 5% (0.0015 ETH) covers platform infrastructure. The blockchain records everything, tokens prove Miguel's access, and both parties get what they want—immediately. No algorithm decides what gets promoted, no ads distract from value, just straightforward exchange: create something useful, price it fairly, get paid when people find it valuable.
+When Miguel buys a post about Layer 2 solutions for 0.03 ETH, the full 0.03 ETH goes directly to the creator. The blockchain records everything, tokens prove Miguel's access, and both parties get what they want—immediately. No algorithm decides what gets promoted, no ads distract from value, just straightforward exchange: create something useful, price it fairly, get paid when people find it valuable.
 
 ## The Role of Free Content
 

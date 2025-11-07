@@ -49,7 +49,7 @@ When someone purchases, that transaction is also recorded. Buyer receives ERC-69
 
 **Publication**: Marcus publishes. Content stays on IPFS with its CID. Thumbnail uploads to IPFS publicly. Metadata submits to Ethereum blockchain via MarketPlace contract. Post assigned unique token ID. Gas fee (~$5-10 mainnet, pennies testnet) goes to network validators. No separate contract deployment—all posts managed in single MarketPlace contract (ERC-6909).
 
-**Purchase**: Sarah buys for 0.03 ETH. Her wallet sends ETH to MarketPlace contract. Contract splits payment: 0.0285 ETH (95%) to Marcus, 0.0015 ETH (5%) to platform infrastructure. Contract mints ERC-6909 tokens (1 unit of that token ID) to Sarah's wallet. Transaction is atomic—everything succeeds together or nothing happens.
+**Purchase**: Sarah buys for 0.03 ETH. Her wallet sends ETH to MarketPlace contract. The full 0.03 ETH goes directly to Marcus. Contract mints ERC-6909 tokens (1 unit of that token ID) to Sarah's wallet. Transaction is atomic—everything succeeds together or nothing happens.
 
 **Access**: Sarah wants to read. Frontend queries blockchain for CID and token ID. Backend checks Sarah's token balance (ERC-6909) for that specific token ID. Confirms ownership. Fetches content from IPFS. Serves to Sarah's browser. Feels instant, but multiple systems work together behind the scenes.
 

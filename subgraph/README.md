@@ -65,7 +65,6 @@ event PostSubscribed(
 - Updates Creator entity (increments total subscribers and earnings)
 - Creates or updates Holder entity for the subscriber
 - Updates GlobalStats (purchases, volume, revenue)
-- Calculates and tracks platform fees
 - Tracks user statistics
 
 **Use Case:** Triggered when a user subscribes to a post (purchases access)
@@ -128,8 +127,7 @@ event PostSubscribed(
 - Clear ownership history
 
 ### Platform Analytics
-- Real-time creator earnings
-- Platform fee tracking
+- Real-time creator earnings (100% to creators)
 - User engagement metrics
 - Content performance analytics
 

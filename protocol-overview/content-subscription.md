@@ -12,7 +12,7 @@ Think of buying a book. You pay once, own it forever, can read it anytime, lend 
 
 When Lisa finds "Complete Guide to Upgradeable Smart Contracts" priced at 0.02 ETH ($40), she sees the title, thumbnail, description, and purchase count, but can't access the full content yet. She clicks "Purchase" and this happens:
 
-**Payment Split**: Of the 0.02 ETH Lisa pays, 0.019 ETH (95%) goes directly to the creator's wallet, and 0.001 ETH (5%) goes to the platform to cover infrastructure costs (servers, IPFS hosting, deployment).
+**Direct Payment**: The full 0.02 ETH Lisa pays goes directly to the creator's wallet.
 
 **Blockchain Records**: Her purchase is stored permanently on Ethereum—immutable and transparent across thousands of nodes.
 
@@ -20,16 +20,9 @@ When Lisa finds "Complete Guide to Upgradeable Smart Contracts" priced at 0.02 E
 
 Six months later, Lisa still uses that guide, having read it dozens of times. She paid once, and the access is permanently tied to her wallet—she can't lose it or have it taken away.
 
-## The 5% Platform Fee
+## Truly For Creators - No Intermediaries
 
-Unlike traditional platforms that take 30-75% of revenue, InkDAO takes only 5%. This fee covers real infrastructure costs:
-
-- **IPFS Hosting**: Pinata service for permanent file storage and private access control
-- **Backend Servers**: Authentication, access verification, content delivery
-- **Deployment**: Hosting the frontend application on Netlify
-- **Maintenance**: Ongoing development, security, and improvements
-
-The remaining 95% goes directly to creators immediately upon purchase—no waiting 30 days for payout, no minimum thresholds, no payment processor taking another 3%.
+Unlike traditional platforms that take 30-75% of revenue, InkDAO gives creators 100% of every purchase directly and immediately—no waiting 30 days for payout, no minimum thresholds, no intermediaries taking a cut. This is the power of decentralization: direct peer-to-peer value transfer with blockchain technology.
 
 ## Creator Economics Compared
 
@@ -37,12 +30,12 @@ The remaining 95% goes directly to creators immediately upon purchase—no waiti
 **YouTube**: ~$3-5 per 1,000 views, platform takes 45%  
 **Udemy**: Platform takes 50-75% depending on acquisition
 **Patreon**: 5-12% plus payment processing fees (~3%)
-**InkDAO**: 5% total, creators get 95%, instant payment
+**InkDAO**: Creators get 100%, instant payment, no intermediaries
 
 For a post priced at 0.02 ETH ($40):
-- Creator receives: 0.019 ETH ($38) per purchase
-- After 100 sales: 1.9 ETH ($3,800)
-- After 500 sales: 9.5 ETH ($19,000)
+- Creator receives: 0.02 ETH ($40) per purchase
+- After 100 sales: 2 ETH ($4,000)
+- After 500 sales: 10 ETH ($20,000)
 
 All payments direct to the creator's wallet, no intermediary holding funds.
 
@@ -81,7 +74,7 @@ This especially benefits niche content. Traditional subscriptions need constant 
 2. **Preview**: Sees title, thumbnail, description, price, purchase count
 3. **Decision**: Decides content is worth the price
 4. **Purchase**: Clicks buy, wallet opens, confirms transaction
-5. **Split**: 95% to creator, 5% to platform infrastructure
+5. **Payment**: 100% to creator, direct transfer
 6. **Tokens**: ERC-6909 tokens (1 unit of that token ID) minted to reader's wallet
 7. **Access**: Backend verifies token balance via blockchain, serves content from IPFS
 8. **Forever**: Reader owns access permanently through non-transferable token balance
@@ -102,4 +95,4 @@ Prices set in ETH—a global currency without central bank control. No currency 
 
 ## The Result
 
-This subscription model creates powerful incentives where quality rises naturally. Creators produce their best work because readers make careful purchasing decisions. Readers pay fair prices because they're buying permanent ownership. The 5% platform fee sustainably covers infrastructure while ensuring 95% of value flows to creators.
+This subscription model creates powerful incentives where quality rises naturally. Creators produce their best work because readers make careful purchasing decisions. Readers pay fair prices because they're buying permanent ownership. With no intermediaries, 100% of value flows directly to creators, making InkDAO truly for content creators.

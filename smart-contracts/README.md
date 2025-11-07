@@ -42,7 +42,7 @@ Reader → MarketPlace.subscribePost() → Payment to Creator + Token minted to 
 **Subscription Flow**:
 1. Reader finds post on platform
 2. Reader calls `subscribePost(tokenId)` with payment
-3. Payment split: ~95% to creator's wallet, ~5% to platform
+3. Payment goes directly to creator's wallet
 4. ERC-6909 token minted to reader (1 unit of tokenId)
 5. Backend verifies token balance via `balanceOf(reader, tokenId)`
 6. Full content served from IPFS
@@ -62,7 +62,7 @@ The following contracts are currently deployed:
 
 ### Content Monetization
 - **Creator-Set Pricing**: Each post has individual pricing in native currency (ETH/MATIC)
-- **Direct Payments**: ~95% to creator's wallet, ~5% to platform infrastructure
+- **Direct Payments**: 100% to creator's wallet, no intermediaries
 - **Lifetime Access**: One-time subscription for permanent access rights
 - **Tokenized Ownership**: Access proven through ERC-6909 token balance
 - **Non-Transferable**: Soul-bound tokens prevent resale of access rights
@@ -82,7 +82,7 @@ The following contracts are currently deployed:
 - Pausable functionality for emergencies
 - Zero address checks
 - Native transfer validation with revert on failure
-- Platform fee (~5%) for infrastructure sustainability
+- Direct payments to creators - no intermediaries
 - Non-transferable tokens prevent unauthorized access trading
 - Duplicate subscription prevention
 
@@ -95,10 +95,10 @@ The following contracts are currently deployed:
 
 ## Configuration Parameters
 
-- **Platform Fee**: ~5% (500/10,000) for infrastructure costs (IPFS, servers, deployment)
 - **Max Post Title Length**: Character limit for post titles
 - **Max Description Length**: Character limit for descriptions  
 - **Max Price In Native**: Maximum allowed price per post
+- **Payment Model**: Direct payments to creators, no platform fees
 
 ## Token ID System
 
