@@ -2,7 +2,7 @@
 
 ## Overview
 
-The **InkDAO Subgraph** is a GraphQL API that indexes and provides efficient access to on-chain data from the InkDAO protocol. Built on [The Graph](https://thegraph.com/), it tracks all content creation, subscriptions, and user activity across the platform in real-time.
+The **InkDAO Subgraph** is a GraphQL API that indexes and provides efficient access to on-chain data from the InkDAO protocol. Built on [Goldsky](https://goldsky.com/), it tracks all content creation, subscriptions, and user activity across the platform in real-time.
 
 The subgraph monitors events from the **MarketPlace** contract (ERC-6909 multi-token implementation), maintaining a comprehensive view of the entire InkDAO ecosystem within a single contract.
 
@@ -146,6 +146,6 @@ event PostSubscribed(
 
 ## Resources
 
-* [The Graph Documentation](https://thegraph.com/docs/)
+* [The Graph Documentation](https://docs.goldsky.com/)
 * [GraphQL Documentation](https://graphql.org/learn/)
 * [InkDAO Smart Contracts](../smart-contracts/README.md)
